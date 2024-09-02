@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #10214e;
+  color: #eee;
 }
 
 article {
@@ -26,9 +26,10 @@ article {
   min-width: 20em;
   border-radius: 1rem;
   background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: linear-gradient(0deg, rgb(227, 70, 13) 40%, #e97e04 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
+  color: #1d1d1b;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
 
 h1 {
   margin: 2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: #eee;
 }
 
 button {
@@ -59,17 +60,17 @@ button {
 }
 button:focus {
   outline: none;
-  background: #202592;
+  background: #e97e04;
 }
 button:focus svg {
-  stroke: rgba(0,239,255,1);
+  stroke: #e97e04;
 }
 
 svg {
   position: absolute;
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
+  stroke: #1d1d1b
   transition-delay: .25s;
 }
 button svg:nth-of-type(2) {
@@ -107,7 +108,7 @@ dl {
 
 dt {
   margin-top: .25rem;
-  padding-top: .25rem;
+  padding-top: .4rem;
   border-top: 1px solid rgba(0,0,0,0.3);
   font-weight: bold;
 }
