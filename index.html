@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visitekaartje</title>
+    <title>Visitekaartje Colin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;500&family=Lato&family=Open+Sans:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <div class="card-container">
         <div class="card">
+
             <div class="front">
                 <img src="assets/me.jpg" alt="Foto" class="profile-pic">
-                <h2>Colin</h2>
-                <p>FDND'ER op HvA</p>
+                <h1>Colin</h1>
+                <h3>FDND'ER op HvA</h3>
             </div>
+
             <div class="back">
-                <h3>Over mij</h3>
-                <ul>
-                    <li>Starwars fan</li>
-                    <li>Games en films</li>
-                    <li>Afgestuurde software developer</li>
+                <h2>Over mij</h2>
+                <ul class="button-list">
+                    <li><button class="theme-select" data-section="hobbys"><span>📺</span>Hobby's</button></li>
+                    <li><button class="theme-select" data-section="werkervaring"><span>💼</span>Werkervaring</button></li>
+                    <li><button class="theme-select" data-section="kennis"><span>💻</span>Kennis</button></li>
                 </ul>
+                
+                <div class="content">
+                    <div id="hobbys" class="section-content">
+                        <p>Mijn hobby's zijn films kijken, gamen, karten en sporten. Mijn favoriete film franchise is Starwars. Ik heb dan ook (bijna) alles wel gezien :D</p>
+                        <button class="back-button">Terug</button>
+                    </div>
+                    <div id="werkervaring" class="section-content">
+                        <p>Ik ben een afgestuurde software developer die in zijn vrije tijd al een paar website's heeft gebouwd voor klanten. Momenteel heb ik een bijbaantje in de horeca en ben ik werkzaam geweest als bezorger en vakkenvuller.</p>
+                        <button class="back-button">Terug</button>
+                    </div>
+                    <div id="kennis" class="section-content">
+                        <p>Mijn kennisgebieden zijn HTML, CSS, JavaScript (Ook React), Python en PHP (Met een beetje Laravel).</p>
+                        <button class="back-button">Terug</button>
+                    </div>
+                </div>
             </div>
+            
         </div>
     </div>
     <script src="./scripts/script.js"></script>
