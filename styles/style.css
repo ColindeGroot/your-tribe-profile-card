@@ -120,9 +120,7 @@ span {
   background-color: #ddd;
 }
 
-.content.visible ~ h2,
-.content.visible ~ ul.button-list,
-.content.visible ~ .theme-select {
+.content.visible ~ h2,.content.visible ~ ul.button-list,.content.visible ~ .theme-select {
   display: none;
 }
 
